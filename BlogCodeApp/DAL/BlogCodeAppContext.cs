@@ -15,6 +15,7 @@ namespace BlogCodeApp.DAL
         public DbSet<Blog> Blogs { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
